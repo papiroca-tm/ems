@@ -17,7 +17,6 @@ const needle = require('needle');
 const tress = require('tress');
 const cheerio = require('cheerio');
 
-
 const baseURL = 'https://www.content-review.com';
 const newsURL = `${baseURL}/articles/news/`;
 let results = [];
