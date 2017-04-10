@@ -1,3 +1,14 @@
-<h1>
-  {{title}}
-</h1>
+<p-toolbar>
+  <div class="ui-toolbar-group-left">
+    <span style="margin: 0px 30px 0px 30px">{{title}}</span>
+    <button pButton type="button" label="Главная" icon="fa-home" (click)="onClickHome()"></button>
+    <button pButton type="button" label="Базы СМИ" icon="fa-archive" (click)="onClickMediaDataBase()"></button>
+    <!--<p-splitButton label="Save" icon="fa-check" [model]="items"></p-splitButton>-->
+  </div>
+  <div class="ui-toolbar-group-right">
+    <button pButton type="button" icon="fa-search"></button>
+    <button pButton type="button" icon="fa-user"></button>
+  </div>
+</p-toolbar>
+
+<router-outlet></router-outlet>
